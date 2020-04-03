@@ -14,8 +14,12 @@ class ApacheKnox < Formula
   def install
     rm_f Dir["bin/*.cmd"]
     libexec.install Dir["*"]
-    bin.install Dir[libexec/"bin/*"]
-    bin.env_script_all_files(libexec/"bin", Language::Java.java_home_env("1.8"))
+
+    # Some binaries have really generic names (like `test`) and most seem to be
+    # too special-purpose to be permanently available via PATH.
+    %w[gateway.sh ldap.sh].each do |script|
+      (bin/script).write_env_script "#{libexec}/bin/#{script}", Language::Java.java_home_env("1.8")
+    end
   end
 
   test do
