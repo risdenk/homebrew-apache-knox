@@ -19,7 +19,7 @@ class ApacheKnox < Formula
     if build.head?
       system "mvn", "clean", "package", "-pl", "gateway-release", "-am", "-DskipTests", "-Ppackage,release"
       (buildpath/"target/binaries").mkpath
-      system "tar", "xzf", "target/1.4.0-SNAPSHOT/knox-*-SNAPSHOT.tar.gz", "-C", "target/binaries"
+      system "tar", "xzf", Dir["target/*-SNAPSHOT/knox-*-SNAPSHOT.tar.gz"].first, "-C", "target/binaries"
       rm_f Dir["target/binaries/*/bin/*.cmd"]
       libexec.install Dir["target/binaries/*/*"]
     else
