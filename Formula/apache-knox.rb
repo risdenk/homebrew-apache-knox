@@ -20,8 +20,8 @@ class ApacheKnox < Formula
       system "mvn", "clean", "package", "-pl", "gateway-release", "-am", "-DskipTests", "-Ppackage,release"
       (buildpath/"target/binaries").mkpath
       system "tar", "xzf", Dir["target/*-SNAPSHOT/knox-*-SNAPSHOT.tar.gz"].first, "-C", "target/binaries"
-      rm_f Dir["target/binaries/*-SNAPSHOT/bin/*.cmd"]
-      libexec.install Dir["target/binaries/*-SNAPSHOT/*"]
+      rm_f Dir["target/binaries/knox-*-SNAPSHOT/bin/*.cmd"]
+      libexec.install Dir["target/binaries/knox-*-SNAPSHOT/*"]
     else
       rm_f Dir["bin/*.cmd"]
       libexec.install Dir["*"]
