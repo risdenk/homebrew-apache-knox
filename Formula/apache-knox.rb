@@ -1,4 +1,4 @@
-class ApacheKnoxAT130 < Formula
+class ApacheKnox < Formula
   desc "Apache Knox"
   homepage "https://knox.apache.org"
   url "https://www.apache.org/dyn/closer.lua?path=knox/1.3.0/knox-1.3.0.tar.gz"
