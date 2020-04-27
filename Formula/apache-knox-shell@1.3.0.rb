@@ -1,4 +1,4 @@
-class ApacheKnoxShellAT120 < Formula
+class ApacheKnoxShellAT130 < Formula
   desc "Apache Knox Shell"
   homepage "https://knox.apache.org"
   url "https://archive.apache.org/dist/knox/1.3.0/knoxshell-1.3.0.tar.gz"
