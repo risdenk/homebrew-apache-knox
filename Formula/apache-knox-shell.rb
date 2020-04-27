@@ -1,10 +1,10 @@
 class ApacheKnoxShell < Formula
   desc "Apache Knox Shell"
   homepage "https://knox.apache.org"
-  url "https://www.apache.org/dyn/closer.lua?path=knox/1.3.0/knoxshell-1.3.0.tar.gz"
-  mirror "https://archive.apache.org/dist/knox/1.3.0/knoxshell-1.3.0.tar.gz"
-  version "1.3.0"
-  sha256 "cbe4a616ef208d47bd936984aa59cb757baafee52e2985a865748b606c62adf6"
+  url "https://www.apache.org/dyn/closer.lua?path=knox/1.4.0/knoxshell-1.4.0.tar.gz"
+  mirror "https://archive.apache.org/dist/knox/1.4.0/knoxshell-1.4.0.tar.gz"
+  version "1.4.0"
+  sha256 "365b615ee3c3eb475e1a7860978fcd24e3e4d431aa6d417f61cee5a84d7abff2"
 
   head do
     url "https://github.com/apache/knox.git"

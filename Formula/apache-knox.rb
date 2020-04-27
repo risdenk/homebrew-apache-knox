@@ -1,10 +1,10 @@
 class ApacheKnox < Formula
   desc "Apache Knox"
   homepage "https://knox.apache.org"
-  url "https://www.apache.org/dyn/closer.lua?path=knox/1.3.0/knox-1.3.0.tar.gz"
-  mirror "https://archive.apache.org/dist/knox/1.3.0/knox-1.3.0.tar.gz"
-  version "1.3.0"
-  sha256 "476e1267c3faee711a6b77b26267d9368e328621ba8ac81869c5e32ec136beb4"
+  url "https://www.apache.org/dyn/closer.lua?path=knox/1.4.0/knox-1.4.0.tar.gz"
+  mirror "https://archive.apache.org/dist/knox/1.4.0/knox-1.4.0.tar.gz"
+  version "1.4.0"
+  sha256 "c2c535aeff4f01f8adda7ef0d25309d5b160eeb8b99605468156d3ff4a88e333"
 
   head do
     url "https://github.com/apache/knox.git"
