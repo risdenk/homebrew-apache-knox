@@ -11,8 +11,6 @@ class ApacheKnoxShell < Formula
     depends_on "maven" => :build
   end
 
-  bottle :unneeded
-
   depends_on "openjdk@8"
 
   def install

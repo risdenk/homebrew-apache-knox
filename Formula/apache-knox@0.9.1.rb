@@ -5,8 +5,6 @@ class ApacheKnoxAT091 < Formula
   version "0.9.1"
   sha256 "5ee3a2184352801beb0aab05a19ca7b03eaa3b50e58356e35718ccc24396c98a"
 
-  bottle :unneeded
-
   depends_on "openjdk@8"
 
   def install

@@ -5,8 +5,6 @@ class ApacheKnoxShellAT0140 < Formula
   version "0.14.0"
   sha256 "ac8bf9e38b5ff679abcbe8ff379b52cd27058d1f925fae57a218475a77b007c7"
 
-  bottle :unneeded
-
   depends_on "openjdk@8"
 
   def install

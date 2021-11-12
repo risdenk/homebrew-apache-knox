@@ -5,8 +5,6 @@ class ApacheKnoxShellAT130 < Formula
   version "1.3.0"
   sha256 "cbe4a616ef208d47bd936984aa59cb757baafee52e2985a865748b606c62adf6"
 
-  bottle :unneeded
-
   depends_on "openjdk@8"
 
   def install
